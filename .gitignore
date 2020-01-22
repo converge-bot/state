@@ -1,0 +1,11 @@
+# lock files
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
+
+# ignore all built files
+/dist
+
+node_modules
+
+converge-state-*.tgz
