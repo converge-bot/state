@@ -4,7 +4,7 @@ import {
   isDraftable
 } from "immer"
 
-import /* type */ { Draft, Patch } from "immer"
+import type { Draft, Patch } from "immer"
 
 type SetState <S> =
   (draft: Draft<S>) => void | S | PromiseLike<void | S>
