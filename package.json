@@ -1,6 +1,6 @@
 {
   "name": "@converge/state",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Minimal state management library similar to `redux`, with `immer` built in.",
   "license": "MIT",
   "author": "Bo Lingen <lingenbw@gmail.com> (https://github.com/citycide)",
