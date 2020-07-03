@@ -2,9 +2,9 @@ import {
   produce,
   applyPatches,
   isDraftable
-} from 'immer'
+} from "immer"
 
-import /* type */ { Draft, Patch } from 'immer'
+import /* type */ { Draft, Patch } from "immer"
 
 type SetState <S> =
   (draft: Draft<S>) => void | S | PromiseLike<void | S>
@@ -33,8 +33,8 @@ export interface Store <S, A extends Actions<S>> {
 }
 
 const isThenable = (value: unknown): value is PromiseLike<unknown> =>
-  typeof value === 'object' &&
-  typeof (value as any).then === 'function'
+  typeof value === "object" &&
+  typeof (value as any).then === "function"
 
 export const createStore = <S, R extends Actions<S>> (
   initialState: S,

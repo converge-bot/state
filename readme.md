@@ -15,7 +15,7 @@ npm i @converge/state
 ## usage
 
 ```js
-import { createStore } from '@converge/state'
+import { createStore } from "@converge/state"
 
 const store = createStore({ count: 0 }, {
   plus: (by = 1) => state => { state.count += by },
