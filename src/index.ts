@@ -1,7 +1,9 @@
 import {
   produce,
   applyPatches,
-  isDraftable
+  isDraftable,
+  enableMapSet,
+  enablePatches
 } from "immer"
 
 import type { Draft, Patch } from "immer"
@@ -31,6 +33,9 @@ export interface Store <S, A extends Actions<S>> {
   getActions: () => ReturnActions<S, A>,
   subscribe: (subscriber: () => any) => () => void
 }
+
+enableMapSet()
+enablePatches()
 
 const isThenable = (value: unknown): value is PromiseLike<unknown> =>
   typeof value === "object" &&
