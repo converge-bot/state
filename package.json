@@ -11,9 +11,15 @@
     "node": ">=12"
   },
   "main": "dist/index.js",
+  "module": "es/index.mjs",
   "types": "dist/index.d.ts",
+  "exports": {
+    "import": "./es/index.mjs",
+    "require": "./dist/index.js"
+  },
   "files": [
-    "dist"
+    "dist",
+    "es"
   ],
   "scripts": {
     "build": "tsc",
